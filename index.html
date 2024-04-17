@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">  
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logowrapper">
+            <img src="./images/logoipsum-332.svg" class="logo" alt="">
+        </div>
+        <div class="navlistwrapper">
+            <ul class="navlist">
+                <a href="#secondsection"><li class="navlink">Guess</li></a>
+                <a href="#thirdsection"><li class="navlink">Shopping</li></a>
+                <a href="#forthsection"><li class="navlink">Math</li></a>
+            </ul>
+        </div>
+    </nav>
+    <section id="herosection">
+        <div class="herobg">
+            <div class="herotextwrapper">
+                <h1 class="herotitle">Digital playground</h1>
+                <p class="herotext">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam dicta consequuntur perspiciatis sequi commodi itaque cumque, quod modi nostrum.</p>
+                <a href="#secondsection"><svg class="heroarrowdown" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="15.Arrow Down"><path d="M12 24a12 12 0 1 1 12-12 12.013 12.013 0 0 1-12 12zm0-22a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2z"/><path d="m12 18.414-4.707-4.707 1.414-1.414L12 15.586l3.293-3.293 1.414 1.414L12 18.414z"/><path d="M11 6h2v11h-2z"/></g></svg>
+                </a>
+             </div>
+        </div>
+    </section>
+
+    <section id="secondsection">
+        <h2>Guess a number</h2>
+        <p>There is randomly generated number from 1 to 10, try and guess it!</p>
+        <div class="cardbtnwrapper">
+            <div class="card">
+                <div class="cardfront">
+                    <img src="images/check.png" id="checkicon" class="check" alt="">
+                    <img src="images/remove.png" id="removeicon" class="remove" alt="">
+                </div>
+                <div class="cardback">
+                    <img class="question" src="images/question-mark.png" alt="">
+                </div>
+            </div>
+            <div class="buttonwrapper">
+                    <button value="1" class="numberbtn">1</button>
+                    <button value="2" class="numberbtn">2</button>
+                    <button value="3" class="numberbtn">3</button>
+                    <button value="4" class="numberbtn">4</button>
+                    <button value="5" class="numberbtn">5</button><br>
+                    <button value="6" class="numberbtn">6</button>
+                    <button value="7" class="numberbtn">7</button>
+                    <button value="8" class="numberbtn">8</button>
+                    <button value="9" class="numberbtn">9</button>
+                    <button value="10" class="numberbtn">10</button>
+            </div>
+            <button id="tryagain">Try again</button>
+        </div>
+    </section>
+
+    <section id="thirdsection">
+        <h2>Shopping list</h2>
+        <p>Here you can make a shopping list for your next trip to the market!</p>
+        
+        <form id="formId" action="">
+            <Label for="item">New item:</Label>
+            <input type="text" name="item" id="item">
+            <a href="#thirdsection"><button id="formbtn">+</button></a>
+        </form>
+
+        <div id="div1"><p id="shoppinglist"></p></div>
+    </section>
+
+    <section id="forthsection">
+        <h2>Just need return on function  :V</h2>
+        <p>Here is some simple math.</p>
+        <div id="div2"></div>
+        <div id="div3"></div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

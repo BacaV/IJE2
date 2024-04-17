@@ -1,0 +1,183 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #eeee;
+    font-family: "Russo One";
+    height: auto;
+}
+
+.navbar{
+    background-color: #b00fbe;
+    padding: 15px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.navlist{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    position: relative;
+}
+
+.navlist>a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    transition: 300ms;
+}
+
+.navlist>a:hover{
+    text-decoration: none;
+    color: aqua;
+    font-size: 24px;
+}
+
+#herosection{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.herobg{
+    background-image: url('https://i.pinimg.com/originals/db/04/b7/db04b73374dd3b7f6a29d7943f96e7de.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.herotextwrapper{
+    width: 75%;
+    text-align: center;
+}
+
+.heroarrowdown{
+    width: 60px;
+    fill: rgb(20, 0, 41);
+}
+
+.herotitle{
+    color: white;
+    font-size: 38px;
+}
+
+.herotext{
+    color: #dddd;
+    font-size: 26px;
+}
+
+.herotitle{
+    margin: 0;
+}
+
+#secondsection{
+    height: 100vh;
+    position: relative;
+    background-color: rgb(251, 216, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+}
+
+.numberbtn{
+    border: none;
+    background-image: linear-gradient(#8c00ff, #ff00ff);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius:10px ;
+    margin: 10px;
+    font-family: "Russo One";
+}
+
+#tryagain{
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(#8c00ff, #ff00ff);
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-family: "Russo One";
+    font-size: 18px;
+    visibility: hidden;
+}
+
+#tryagain:hover{
+    background-image: linear-gradient(#5e00aa, #9e009e);
+}
+
+.numberbtn:hover{
+    background-image: linear-gradient(#5e00aa, #9e009e);
+}
+
+
+.question{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.remove, .check{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h2{
+    margin: 0;
+}
+
+.cardbtnwrapper{
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#8c00ff, #ff00ff);
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+#thirdsection{
+    height: 100vh;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#forthsection{
+    height: 100vh;
+    background-color: rgb(120, 152, 180);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
