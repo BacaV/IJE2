@@ -68,7 +68,7 @@
         
         <form id="formId" action="">
             <Label for="item">New item:</Label>
-            <input type="text" name="item" id="item">
+            <input class="input" type="text" name="item" id="item">
             <a href="#thirdsection"><button id="formbtn">+</button></a>
         </form>
 
@@ -76,12 +76,118 @@
     </section>
 
     <section id="forthsection">
-        <h2>Just need return on function  :V</h2>
-        <p>Here is some simple math.</p>
-        <div id="div2"></div>
-        <div id="div3"></div>
+
+    
+        <table class="table-fill">
+            <thead>
+                <tr>
+                    <th class="text-left">Month </th>
+                    <th class="text-left">Visitors </th>
+    </tr>
+            </thead>
+            <tbody class="table-hover">
+                <tr>
+                    <td class="text-left">JANUARY</td>
+                    <td class="text-left">15645</td>
+    
+                </tr>
+                <tr>
+                    <td class="text-left">FEBRUARY</td>
+                    <td class="text-left">35264</td>
+    
+                    
+                </tr>
+                <tr>
+                    <td class="text-left">MARCH</td>
+                    <td class="text-left">737537</td>
+                </tr>
+                <tr>
+                    <td class="text-left">APRIL</td>
+                    <td class="text-left">2454844</td>
+                </tr>
+                <tr>
+                        <td class="text-left">MAY</td>
+                    <td class="text-left">3632746</td>
+                    
+                </tr>
+                <tr>
+                        <td class="text-left">JUNE</td>
+                    <td class="text-left">6433640</td>
+                    
+                    
+                </tr>
+            </tbody>
+                    
+        </table>
+
+        <div class="marquee">
+            <span>DIGITAL PLAYGROUND</span>
+            <span>DIGITAL PLAYGROUND</span>
+            <span>DIGITAL PLAYGROUND</span>
+        </div>
+
+        <div class="searchwrapper">
+            <form action="search.php" method="post">
+                <input class="input" name="search" type="text" placeholder="search by name">
+                <input type="submit" name="searchbtn" id="searchbtn">
+            </form>
+
+            <form action="listall.php" method="post">
+                <button type="submit">Find all</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="fifthsection">
+
+        <div class="accordion">
+            <h1>Frequently Asked Questions</h1>
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion1">
+                <label for="accordion1" class="accordion-item-title"><span class="icon"></span>Can I send my code so it can be featured on this site?</label>
+                <div class="accordion-item-desc">Yes, you can send me a mail with files and I will be happy to check it and decide if it can be featured here!</div>
+            </div>
+        
+            <div class="accordion-item">
+                <input type="checkbox" id="accordion2">
+                <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Why did you start this project?</label>
+                <div class="accordion-item-desc">This project is started as a school assigment!</div>
+            </div>
+        
+            
+        
+        </div>
 
     </section>
+
+    <section id="sectionsix">
+        <h3>Gallery</h3>
+        <div class="imagesgrid">
+            <img class="galleryimg" src="images/70s-retro-perspective-lines-background-vintage-colourful-stripes-banner-backdrop-and-wallpaper-vector.jpg" alt="">
+            <img class="galleryimg" src="images/classic-vintage-rays-sunburst-retro-background_1017-33769.avif" alt="">
+            <img class="galleryimg" src="images/spiral-retro-background-1.jpg" alt="">
+            <img class="galleryimg" src="images/sunburst-retro-colors-background-vintage-background-for-painting-interior-cover-wallpaper-with-grunge-texture-abstract-geometric-background-free-vector.jpg" alt="">
+        
+        
+        </div>
+    </section>
+
+    <section id="sectionseven">
+        
+        <form class="form" action="dbadd.php" method="post">
+            <label for="name">Name:</label>
+            <input class="input" type="text" name="name" id="name">
+            <label for="surname">Surname:</label>
+            <input class="input" type="text" name="surname" id="surname">
+            <label for="age">Age:</label>
+            <input class="input" type="text" name="age" id="age">
+            <input type="submit" name="submit" id="submit">
+        </form>
+        
+    </section>
+
 
     <script src="app.js"></script>
 </body>
